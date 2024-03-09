@@ -1079,7 +1079,7 @@ class BaseModel(InitialParameterRepresenterMixIn, LightningModule, TupleOutputMi
                     loss_value = loss
                 ax.set_title(f"Loss {loss_value}")
             ax.set_xlabel("Time index")
-            fig.legend()
+            ax.legend()
             figs.append(fig)
 
         # return multiple of target is a list, otherwise return single figure
